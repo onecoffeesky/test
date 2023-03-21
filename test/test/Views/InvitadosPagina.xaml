@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.Views.Page1"
+             Title="Invitados">
+
+    <ContentPage.Content>
+        <Grid Margin="15,20,15,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="400"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Frame 
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#f93939">
+
+                <StackLayout>
+                    <Label Text="Tus invitados"
+           FontSize="Medium"
+           FontAttributes="Bold"
+                           TextColor="White"/>
+
+                    <Label Text="No hay invitados registrados" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <Frame 
+                Grid.Row="1"
+                Grid.Column="0"
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#00774c">
+
+                <StackLayout>
+                    <Label Text="Añadir invitados"
+           FontSize="Default"
+           TextColor="White"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"/>
+
+                    
+                </StackLayout>
+            </Frame>
+            <Frame 
+                Grid.Row="1"
+                Grid.Column="1"
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#00774c">
+
+                <StackLayout>
+                    <Label Text="Editar invitados"
+           FontSize="Default"
+           TextColor="White"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"/>
+
+
+                </StackLayout>
+            </Frame>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

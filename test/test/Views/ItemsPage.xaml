@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.Views.ItemsPage"
+             Title="Resumen"
+             xmlns:local="clr-namespace:test.ViewModels"  
+             xmlns:model="clr-namespace:test.Models"  
+             
+             x:Name="BrowseItemsPage">
+
+
+    <ContentPage.Content>
+        <Grid Margin="15,20,15,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130" />
+                <RowDefinition Height="130" />
+                <RowDefinition Height="130" />
+                <RowDefinition Height="145" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+
+            </Grid.ColumnDefinitions>
+            
+            <Frame Grid.Row="0"
+                   Grid.ColumnSpan="2"
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#f93939">
+
+                <StackLayout>
+                    <Label Text="Tus invitados"
+           FontSize="Medium"
+           FontAttributes="Bold"
+                           TextColor="White"/>
+                    
+                    <Label Text="No hay invitados registrados" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="1"
+            Grid.ColumnSpan="2"
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#f9c529">
+
+                <StackLayout>
+                    <Label Text="Tus mascotas"
+           FontSize="Medium"
+           FontAttributes="Bold"
+                           TextColor="White"/>
+
+                    <Label Text="No hay mascotas registradas" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="2"
+            Grid.ColumnSpan="2"
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#4051dd">
+
+                <StackLayout>
+                    <Label Text="Tus vehículos"
+           FontSize="Medium"
+           FontAttributes="Bold"
+                           TextColor="White"/>
+
+                    <Label Text="No hay vehículos registrados" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="3"
+                   Grid.Column="0"
+                   
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#f60000">
+
+                <StackLayout>
+                    <Label Text="ALERTAR"
+           FontSize="Medium"
+           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+                    <Image Source="alerta_icon.png" VerticalOptions="Center" HeightRequest="50" Margin="8" />
+
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="3"
+                   Grid.Column="1"
+                   
+            
+       CornerRadius="7"
+       Padding="8"
+        Margin="10"
+                   BackgroundColor="#00774c">
+
+                <StackLayout>
+                    <Label Text="Avisos"
+           FontSize="Medium"
+           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+                    <Image Source="avisos_icon.png" VerticalOptions="Center" HeightRequest="50" Margin="8"/>
+
+                </StackLayout>
+            </Frame>
+        </Grid>
+        
+        
+    </ContentPage.Content>
+</ContentPage>
