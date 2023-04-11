@@ -93,6 +93,12 @@
     <FlyoutItem Title="Vehículos" Icon="vehiculos_icon.png">
         <ShellContent Route="VehiculosPagina" ContentTemplate="{DataTemplate local:VehiculosPagina}" />
     </FlyoutItem>
+    <FlyoutItem Title="TextBoxTest" Icon="vehiculos_icon.png">
+        <ShellContent Route="TextBoxTest" ContentTemplate="{DataTemplate local:TextBoxTest}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Usuario" Icon="vehiculos_icon.png">
+        <ShellContent Route="Usuario" ContentTemplate="{DataTemplate local:Usuario}" />
+    </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" IconImageSource="logout_icon.png" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">

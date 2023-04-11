@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.Views.TextBoxTest">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid Margin="20">
+                <Frame  Padding="10"
+            BorderColor="Transparent"
+            HasShadow="False">
+                    <Entry Placeholder="Enter here"/>
+                </Frame>
+                <Label  Text=" UserName "
+            FontSize="15"
+            TextColor="#ff33"
+            BackgroundColor="white"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Margin="20,-10,0,0"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
